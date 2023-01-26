@@ -1,0 +1,28 @@
+{
+  "name": "connect_four_server",
+  "version": "1.0.0",
+  "description": "Multiplayer implementation over the web for the game connect four",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tzenisekj/Connect_Four.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tzenisekj/Connect_Four/issues"
+  },
+  "homepage": "https://github.com/tzenisekj/Connect_Four#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18"
+  }
+}
