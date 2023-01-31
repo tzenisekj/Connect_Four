@@ -4,6 +4,7 @@ import  io  from "socket.io-client"
 import Game from "./Pages/Game"
 import { useEffect } from "react"
 import  SocketContextProvider  from "./contexts/socketContext"
+import Header from "./components/header"
 
 function App() {
 
