@@ -1,21 +1,9 @@
 import Home from "./Pages/Home"
 import { Routes, Route } from "react-router-dom"
-import  io  from "socket.io-client"
 import Game from "./Pages/Game"
-import { useEffect } from "react"
-import  SocketContextProvider  from "./contexts/socketContext"
-import Header from "./components/header"
+
 
 function App() {
-
-// useEffect(() => {
-//      const socket = io("http://localhost:3000"); 
-     
-//      return(() => {
-//       socket.disconnect(); 
-//      })
-// },[])
-
 
   return (
     <Routes>

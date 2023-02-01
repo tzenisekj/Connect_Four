@@ -4,9 +4,9 @@ import { useSocketContext } from '../contexts/socketContext';
 import { useNavigate } from 'react-router-dom';
 
 type Game = {
-  id: "string",
-  player1: "string",
-  player2: "string",
+  id: string,
+  player1: string,
+  player2: string,
   spectators: number,
   joinable: boolean
 }
@@ -33,7 +33,7 @@ export default function Home() {
     <div>
       <Header />
       <h1>Home</h1>
-      {games.map((i:Game) => <h1 key={i.id} onClick={() => navigate(`/game/${i.id}`)}>Game {i.id}</h1>)}
+      {games.map((i:Game) => <h1 className="hover:cursor-pointer" key={i.id} onClick={() => navigate(`/game/${i.id}`)}>Game {i.id}</h1>)}
     </div>
   )
 }

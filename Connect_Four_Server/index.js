@@ -16,24 +16,27 @@ const io = new Server(server, {
 const games = [
     {
         id: v4id.v4(),
-        player1: "Fill",
-        player2: "Fill",
+        player1: "Terminator",
+        player2: "----------",
         spectators: 0,
-        joinable: true
+        joinable: true,
+        passwordLocked: true
     },
     {
         id: v4id.v4(),
-        player1: "Fill",
-        player2: "Fill",
+        player1: "Tyler",
+        player2: "Red Rob",
         spectators: 20,
-        joinable: false
+        joinable: false,
+        passwordLocked: false
     },
     {
         id: v4id.v4(),
-        player1: "Fill",
-        player2: "Fill",
+        player1: "QSwKLegacy",
+        player2: "EnchiladaMan",
         spectators: 1,
-        joinable: false
+        joinable: false,
+        passwordLocked: false
     },
 
 ]
@@ -48,11 +51,12 @@ io.on("connection", (socket) => {
     socket.on("game-query", (query) => {
         // take in query and return array of games matching said query
 
-        socket.emit("query results",[]);
+        socket.emit("query-results",[]);
     })
 
     socket.on("new game", () => {
         // create new room as new game and allow one extra socket to join
+        
     })
 
     socket.on("disconnect", () => {
