@@ -38,6 +38,206 @@ const games = [
         joinable: false,
         passwordLocked: false
     },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
+    {
+        id: v4id.v4(),
+        player1: "Terminator",
+        player2: "----------",
+        spectators: 0,
+        joinable: true,
+        passwordLocked: true
+    },
 
 ]
 
@@ -50,8 +250,11 @@ io.on("connection", (socket) => {
 
     socket.on("game-query", (query) => {
         // take in query and return array of games matching said query
-
-        socket.emit("query-results",[]);
+        arr = games; 
+        if (query !== "") {
+            arr = [games[1], games[2]]; 
+        }
+        socket.emit("query-results",arr);
     })
 
     socket.on("new game", () => {
