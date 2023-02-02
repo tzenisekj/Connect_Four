@@ -1,7 +1,11 @@
-import React from 'react'
+import { useEffect } from "react"
 import Header from '../components/header'
+import { useSocketContext } from "../contexts/socketContext"
+
+const socket = useSocketContext()
 
 function Game() {
+
   return (
     <div>
       <Header />
