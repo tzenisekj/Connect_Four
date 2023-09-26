@@ -1,0 +1,59 @@
+[33mcommit c3a28a11c6beba586ea3496654a2629b1a391e5f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Tyler Zenisek <tzenisekj@gmail.com>
+Date:   Thu Feb 2 11:08:54 2023 -0600
+
+    User Modal
+
+[33mcommit e58ad40493f08e72e2f181f46f3df336912f6965[m
+Author: Tyler Zenisek <tzenisekj@gmail.com>
+Date:   Thu Feb 2 11:02:19 2023 -0600
+
+    modified server
+
+[33mcommit 57d79d2289d513dc40d857960502bc57d2349b57[m
+Author: Tyler Zenisek <tzenisekj@gmail.com>
+Date:   Wed Feb 1 19:15:11 2023 -0600
+
+    socket query functionality
+
+[33mcommit 12349a3e12e9ccc634d58e7df70797b5e8800335[m
+Author: Tyler Zenisek <tzenisekj@gmail.com>
+Date:   Tue Jan 31 21:33:44 2023 -0600
+
+    cleaned up code
+
+[33mcommit b7eb3fdb90c77fdebff5f88eb1ed84d5918823fc[m
+Author: Tyler Zenisek <tzenisekj@gmail.com>
+Date:   Tue Jan 31 17:16:14 2023 -0600
+
+    further implemented socket logic
+
+[33mcommit b2fefd6e481797bf4da7efa0c7757d306c8dbe4d[m
+Author: Tyler Zenisek <tzenisekj@gmail.com>
+Date:   Tue Jan 31 00:15:29 2023 -0600
+
+    updated socket interface
+
+[33mcommit 570bd65cfc907a2f6270a67c8e281ef7a0441fc5[m
+Author: Tyler Zenisek <tzenisekj@gmail.com>
+Date:   Tue Jan 31 00:14:59 2023 -0600
+
+    updated socket interface
+
+[33mcommit 0a1da72376849156e73357ddc864e45eef458c6b[m
+Author: Tyler Zenisek <tzenisekj@gmail.com>
+Date:   Mon Jan 30 15:19:07 2023 -0600
+
+    added tailwind CSS capability
+
+[33mcommit dca33de02fe1e2fc6ae73ff009e81c6e48cd2798[m
+Author: Tyler Zenisek <tzenisekj@gmail.com>
+Date:   Thu Jan 26 12:57:29 2023 -0600
+
+    initalized project setup
+
+[33mcommit ad9739b1c3515d21e6f384b25aa02ecf8c5ecb1c[m
+Author: tzenisekj <55266282+tzenisekj@users.noreply.github.com>
+Date:   Thu Jan 26 12:22:54 2023 -0600
+
+    Initial commit

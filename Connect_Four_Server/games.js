@@ -1,4 +1,4 @@
-export const games = [
+const games = [
     {
         id: v4id.v4(),
         player1: "Terminator",
