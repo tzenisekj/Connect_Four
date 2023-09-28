@@ -1,13 +1,19 @@
+import { createContext } from "react"
 import HomePage from "./pages/Home"
-import { useState } from 'react'
+import { Routes, Route } from "react-router-dom"
+import { io } from "socket.io-client"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const socket = io("http://localhost:3000")
+  const socketContext = createContext()
 
   return (
-    <>
-      <HomePage />
-    </>
+    <socketContext.Provider value={socket}>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="*" element={<h1>404 Page</h1>} />
+      </Routes>
+    </socketContext.Provider>
   )
 }
 
